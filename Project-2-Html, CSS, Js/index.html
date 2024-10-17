@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html, CSS, JavaScript Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<div class="bg"></div>
+     
+<header>
+    <div class="logo">
+        <img src="Images/cropped-footer-logo-1.png" alt="">
+    </div>
+
+    <div class="menu">
+        <i onclick="showNav()" class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="menuResponsive">
+    <nav>
+        <ul>
+            <li><a id="homeA" href="#home">Home</a></li>
+            <li><a id="aboutA" href="#about">About</a></li>
+            <li><a id="servicesA" href="#services">Services</a></li>
+            <li class="lastLi"><a  id="contactA" href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+</div>
+
+<main>
+<section class="home" id="home">
+    <h1>Clean<span>.</span>Slick<span>.</span>Pixel Perfect</h1>
+    <p>lldy is a great one-page theme, perfect for developers and designers but also for someone who just wants a new website for his business. Try it now!</p>
+    <div class="btns">
+        <button class="btn1">Learn more</button>
+        <button class="btn2">Download</button>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="h2">About</h2>
+    <p>It is an amazng one-page theme with great features that offers an incredible experience. It is easy to install, make changes, adapt for your business. A modern design with clean lines and styling for a wide variety of content, exactly how a business design should be. You can add as many images as you want to the main header area and turn them into slider.</p>
+
+    <div class="aboutImgs">
+        <div class="img">
+            <img src="Images/aboutImg1.PNG" alt="">
+        </div>
+        <div class="img">
+            <img src="Images/aboutImg2.PNG" alt="">
+        </div>
+        <div class="img">
+            <img src="Images/aboutImg3.PNG" alt="">
+        </div>
+    </div>
+</section>
+ 
+
+<section class="services"  id="services">
+
+    <div class="upperSection">
+        <h2 class="h2">Services</h2>
+        <p>In order to help you grow your business, our carefully selected experts can advise you in in the following areas:</p>
+    </div>
+
+    <div class="aboutImgs">
+        <div class="img servicesImg ">
+            <img src="Images/servicesImg1.PNG" alt="">
+        </div>
+        <div class="img servicesImg">
+            <img src="Images/servicesImg2.PNG" alt="">
+        </div>
+        <div class="img servicesImg">
+            <img src="Images/servicesImg3.PNG" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="h2">Contact Us</h2>
+
+    <form>
+
+        <div class="inputSection">
+            <div class="row"> 
+                <label for="userName">Your Name (required)</label>
+                <input id="userName" type="text">
+            </div>
+
+            <div class="row">      
+                <label for="email">Your Email (required)</label>
+                <input id="email" type="text">
+                <p id="adMessage"></p>
+            </div>
+
+            <div class="row">         
+                <label for="subject">Subject</label>
+                <input id="subject" type="text">
+            </div>
+        </div>
+
+        <div class="message">
+            <label for="message">Your Message</label>
+            <textarea id="message"></textarea>
+        </div>
+
+        <div class="btn">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</section>
+</main>
+</body>
+
+</html>
